@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background: rgb(244, 249, 250);
+}  
+
+.container {
+  min-width:50%;
+  padding: 10px;
+  line-height: 30px;
+  display: block;
+  float: left;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+#title {
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(28, 68, 190);
+}
+
+#subtitle {
+  font-size: 18px;
+  color:rgb(23, 165, 165);
+  margin-top: 15px;
+}
+
+#description {
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+label, p, .buttonsubmit {
+  font-weight: bold;
+}
+
+.form-datas label, 
+.form-fields, 
+.form-rating,
+p {
+  color: rgb(20, 20, 248);
+} 
+
+.form-datas label, 
+.form-fields,
+p {
+  padding: 10px 5px;
+  align-items: center;
+}  
+
+form {
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 6px 4px 4px 6px rgba(201, 220, 221, 0.5);
+  border-radius: 4px; 
+  background:#cef0eb5b; 
+}
+
+#survey-form {
+  line-height: 25px;
+  align-items: center;
+}  
+
+.form-roles select, 
+.form-hours select {
+  padding: 10px;
+}
+
+.form-genres label,
+.form-places label,
+.form-devices label,
+.form-gifts label {
+  padding: 0px 0px 0px 5px;
+}
+
+textarea, input, select {
+  outline: none;
+  background-color: rgb(248, 247, 248);
+  border: 2px outset rgb(217, 246, 246);
+}
+
+textarea, input, select, button {
+  border-radius: 5px;
+}
+
+div:not(container) {
+    margin-top: 10px;
+}
+
+.buttonsubmit {
+  border: none;
+  width: 100%;
+  font-size: 25px;
+  font-kerning: 2px;
+  padding: 10px 0px;
+  background: rgba(28, 223, 44, 0.25);
+  cursor: pointer;
+  height: 50px;
+}
+
+.form-fields {
+  display: block;
+  width: 100%;
+}
+
+.buttonsubmit:hover {
+  background-color: rgb(221, 236, 13);
+}
+
+textarea:focus {
+  background: rgb(191, 245, 236);
+  color: rgb(75, 85, 144);
+  font-size: x-large;
+}
+
+.textcomments {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0%;
+  }
+}
+
+@media (min-width: 481px) {
+  .container {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+
+
+

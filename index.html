@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\style.css">
+    <title>BookFly-Survey Form</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="header">
+            <h1 id="title">BookFly your BookStore</h1>
+            <h2 id="subtitle">Survey Form</h2>
+            <p id="description">Thank you for helping us to improve our services</p>
+        </div>
+    
+        <form id="survey-form">
+            <div class="form-datas">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" maxlength="50" pattern="[A-Za-z]" 
+                title="Just letters A-Z" class="form-fields" placeholder="Your name" 
+                required/>
+            </div>
+
+        <div class="form-datas">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="example@example.com" class="form-fields" placeholder="Your email..." required/>
+        </div>
+        
+        <div class="form-roles">
+            <p>Your current role:</p>
+              <select id="dropdown" name="role" class="form-fields" required>
+                <option disabled selected value>Select your role:</option>
+                <option value="housewife">Housewife</option>
+                <option value="professional">Professional</option>
+                <option value="retired">Retired</option>
+                <option value="student">Student</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="other">Other</option>
+              </select>
+        </div>
+
+        <div class="form-places">
+           <p>Your favorites/most used places to read:</p>
+        <label>
+            <input name="places" value="bookstore" type="checkbox"
+        class="checkplaces"/>Bookstore</label>
+        <label>
+            <input name="places" value="coffeeshop" type="checkbox"
+        class="checkplaces"/>Coffee Shop</label>
+        <label>
+            <input name="places" value="house" type="checkbox"
+        class="checkplaces"/>House</label>
+        <label>
+            <input name="places" value="library" type="checkbox"
+        class="checkplaces"/>Library</label>
+        <label>
+            <input name="places" value="park" type="checkbox"
+        class="checkplaces"/>Park</label>
+        <label>
+            <input name="places" value="school" type="checkbox"
+        class="checkplaces"/>School</label>
+        <label>
+            <input name="places" value="transport" type="checkbox"
+        class="checkplaces"/>Transport</label>
+        <label>
+            <input name="places" value="work" type="checkbox"
+        class="checkplaces"/>Work</label>
+        </div>
+
+        <div class="form-hours">
+            <p>How many hours a week do you dedicate to reading:</p>
+            <select id="drophours" name="hours" class="form-fields" required>
+                <option disabled selected value>Select an amount</option>
+                <option value="onehour">Less than 1 hour</option>
+                <option value="twohours">From 1 to 2 hours</option>
+                <option value="treehours">From 2 to 3 hours</option>
+                <option value="fourhours">From 3 to 4 hours</option>
+                <option value="sixhours">From 4 to 6 hours</option>
+                <option value="tenhours">From 6 to 10 hours</option>
+                <option value="overtenhours">Over 10 hours</option>
+            </select>
+        </div>
+
+        <div class="form-devices">
+                <p>Your preferred device:</p>
+            <label>
+                <input name="device" value="digital" type="radio"
+                class="radiodevices" checked/>Digital(include audiobook)</label>
+            <label>
+                <input name="device" value="paper" type="radio"
+                class="radiodevices"/>Paper</label>
+            <label>
+                <input name="device" value="both" type="radio"
+                class="radiodevices"/>Both</label>
+        </div>
+  
+        <div class="form-genres">
+            <p>Your favorites literary genres:</p>
+            <label>
+                <input name="genres" value="biografies" type="checkbox"
+            class="checkgenres"/>Biografies</label>
+            <label>
+                <input name="genres" value="business" type="checkbox"
+            class="checkgenres"/>Business</label>
+            <label>
+                <input name="genres" value="classical" type="checkbox"
+            class="checkgenres"/>Fantasy</label>
+            <label>
+                <input name="genres" value="fantasy" type="checkbox"
+            class="checkgenres"/>Hobbies</label>
+            <label>
+                <input name="genres" value="hobbies" type="checkbox"
+            class="checkgenres"/>Horror</label>
+            <label>
+                <input name="genres" value="horror" type="checkbox"
+            class="checkgenres"/>Literary Fiction</label>
+            <label>
+                <input name="genres" value="literfiction" type="checkbox"
+            class="checkgenres"/>Non-Fiction</label>
+            <label>
+                <input name="genres" value="nonfiction" type="checkbox"
+            class="checkgenres"/>Poetry</label>
+           <label>
+               <input name="genres" value="poetry" type="checkbox"
+            class="checkgenres"/>Religion</label>
+            <label>
+                <input name="genres" value="religion" type="checkbox"
+            class="checkgenres"/>Science Fiction</label>
+            <label>
+                <input name="genres" value="sciencefiction" type="checkbox"
+            class="checkgenres"/>Self Help</label>
+            <label>
+                <input name="genres" value="selfhelp" type="checkbox"
+            class="checkgenres"/>Technical</label>
+            <label>
+                <input name="genres" value="technical" type="checkbox"
+            class="checkgenres"/>Thriller</label>
+            <label>
+                <input name="genres" value="thriller" type="checkbox"
+            class="checkgenres"/>Other</label>
+           </div>
+
+        <div class="form-other">
+                <p>If you selected the "Other" option above...</p>
+                <textarea id="comments" class="textcomments" name="comment" 
+                rows="4" cols="20" placeholder="Which literary genre do you like?">
+                </textarea>
+        </div>
+  
+        <div class="form-gifts">
+                <p>Do you have the habit of gifting people with books?</p>
+                <label>
+                <input
+                name="gifts" value="often" type="radio"
+                class="radiogifts" checked/>Yes, often</label>
+            <label>
+                <label>
+                    <input
+                    name="gifts" value="rarely" type="radio"
+                    class="radiogifts"/>Yes, rarely</label>
+                <label>
+                <input name="gifts" value="no" type="radio"
+                class="radiogifts"/>No</label>
+        </div>
+
+        <div class="form-rating">
+                <label id="number-label" for="number">
+                Your rating for our services</label>
+                <input type="number" name="rating" id="number"
+                class="form-fields" min="1" max="10" placeholder="Your rating..." required/>
+        </div>
+
+        <div class="form-suggestion">
+                <p>Thanks for your suggestion or comment:</p>
+                <textarea placeholder="Your comment..." id="comments" 
+                class="textcomments" name="comment" rows="4" cols="50">
+                </textarea>
+        </div>
+  
+        <div class="form-submit">
+                <button type="submit" id="submit" class="buttonsubmit">
+                SUBMIT
+                </button>
+        </div>
+    
+    </form>
+  </div>
+  
+</body>
+</html>
